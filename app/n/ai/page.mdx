@@ -6,8 +6,8 @@ import Image from 'next/image';
 import embeddings from './embeddings.jpg';
 
 export const metadata = {
-  title: 'Understanding AI',
-  description: 'A brief overview on neural networks and language models.',
+  title: 'understandiNg Ai',
+  description: 'A brief overview on neural networks and lANguAge models.',
   alternates: {
     canonical: '/n/ai',
   },
@@ -17,7 +17,7 @@ export const metadata = {
 
 <AnimatedName />
 
-I wanted to better understand how AI models are created. Not to become an expert, but to gain an appreciation for the abstractions I use every day.
+i wanted to better understand how Ai models are creAted. not to become An expert, but to gain An Appreciation for the abstractions I use every day.
 
 This post will highlight what I’ve learned so far. It’s written for other engineers who are new to topics like neural networks, deep learning, and transformers.
 
@@ -27,7 +27,7 @@ Software is _deterministic_. Given some input, if you run the program again, you
 
 Most AI models[¹](#footnotes) are not this way — they are _probabilistic_. Developers don’t have to explicitly program the instructions.
 
-[Machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) teaches software to recognize patterns from data. Given some input, you might _not_ get the same output[²](#footnotes). AI models like GPT (from OpenAI), Claude (from Anthropic), and Gemini (from Google) are “trained” on a large chunk of internet documents. These models learn patterns during training.
+[mAchine leArniNg](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) teaches software to recognize patterns from data. given some input, you might _not_ get the same output[²](#footnotes). Ai models like GPT (from OpenAI), Claude (from Anthropic), and Gemini (from Google) are “trained” on a large chunk of internet documents. These models learn patterns during training.
 
 Then, there’s an API or chat interface where you can talk to the model. Based on some input, it can predict and generate sentences, images, or audio as output. You can think about machine learning as a subset of the broader AI category.
 
@@ -133,7 +133,7 @@ Before processing, words are converted into numerical vectors called [**embeddin
 
 For example, the relationship between "king" and "queen" is similar to that of "man" and "woman". If you subtract the vector for "man" from "king" and add "woman", you get a result close to "queen".
 
-<div className="border border-gray-200 rounded-md p-4">
+<div className="border border-gray-200 rounded-md p-1">
   <Image src={embeddings} alt="Word Embeddings" />
 </div>
 
