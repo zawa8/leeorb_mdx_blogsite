@@ -18,7 +18,9 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
       <html lang="en" className={`${ing115_font.className}`}>
         <body className="antialiased tracking-tight">
           <div className="min-h-screen flex flex-col justify-between pt-0 md:pt-8 p-8 bg-white text-gray-900">
-			<main className="max-w-[60ch] mx-auto w-full space-y-6"> {children} </main>
+            <main className="max-w-[60ch] mx-auto w-full space-y-6">
+              {children}
+            </main>
             <Footer />
             <Analytics />
           </div>
@@ -38,8 +40,13 @@ function Footer() {
     <footer className="mt-12 text-center">
       <div className="flex justify-center space-x-4 tracking-tight">
         {links.map((link) => (
-		  <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="text-gray-400 
-		  hover:text-blue-500 transition-colors duration-200" >
+          <a
+            key={link.name}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-blue-500 transition-colors duration-200"
+          >
             {link.name}
           </a>
         ))}
